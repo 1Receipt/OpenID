@@ -6,7 +6,7 @@
 
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
 
-- Once the your account has been approved, we will send one sandbox certificate by email.
+- Once the checking has been past, one sandbox certification will be sent by email.
 
 - The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
 
