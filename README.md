@@ -22,7 +22,7 @@
     - [Main icon button](ui/buttons/icon-masked-circular_2x.png)
     - [Black icon button](ui/buttons/black_icon-masked-circular_2x.png)
     - [Forest icon button](ui/buttons/forest_icon-masked-circular_2x.png)
-- [1receipt Design Resources](https://www.figma.com/file/BYISy6LhB5PZKllp3Ddvup/1receipt-openID?node-id=0%3A1). Please follow these guidelines
+- Please check [1receipt Design Resources](https://www.figma.com/file/BYISy6LhB5PZKllp3Ddvup/1receipt-openID?node-id=0%3A1) and make sure you follow these guidelines
 
 ## 3. Generate auth URL and integrate user consent dialog
 
