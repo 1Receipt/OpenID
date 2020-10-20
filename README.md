@@ -1,13 +1,13 @@
 # 1Receipt OAuth
-This documentation is for integrate 1receipt account to third party clients
+1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
 
 ### Start
 ##### 1. Apply for 1receipt sandbox certification
--  Fill in [apply form](https://forms.gle/Yg5k1DgTWGchDPVv5) and wait for checking application details. 
+-  Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours. 
   
--  Once the checking has been past, one sandbox certification will be sent by email.
+-  Once the your account has been approved, we will send one sandbox certificate by email.
   
--  The sandbox certification contains `client_id` and `sign_in_domain` `user_pool_id` `region`for sandbox userpool.
+-  The sandbox certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region`for sandbox userpool.
 
 ##### 2. Generate auth URL and integrate user consent dialog
 - Generate auth URL
@@ -21,15 +21,7 @@ This documentation is for integrate 1receipt account to third party clients
   ```
 
 - Integrate the user consent dialog:
-  - Content:
-    ```
-    Do you authorise 1receipt to share your accountId and firstName with 1R OAuth 2.0 Playground?
-    ```
-  - Button:
-    `Allow` | `Cancel`
-  - Example:
-    [Component Example]()
-    ![Component Example Page]()
+  - Instructions for the components...
 
 - Attention: Only allow redirect_uri submitted in apply form.
 
