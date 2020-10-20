@@ -15,13 +15,13 @@
 - There are three colors and two types of buttons for you to choose
   ![Buttons preview](ui/example/ButtonsPreview.png)
   - Continue with 1receipt button:
-    - [Main button](ui/buttons/1receipt-id-continue-with_2x.png)
-    - [Black button](ui/buttons/black_1receipt-id-continue-with_2x.png)
-    - [Forest button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
+    - [Main long button](ui/buttons/1receipt-id-continue-with_2x.png)
+    - [Black long button](ui/buttons/black_1receipt-id-continue-with_2x.png)
+    - [Forest long button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
   - Icon button:
-    - [Main Icon button](ui/buttons/icon-masked-circular_2x.png)
-    - [Black Icon button](ui/buttons/black_icon-masked-circular_2x.png)
-    - [Forest Icon button](ui/buttons/forest_icon-masked-circular_2x.png)
+    - [Main icon button](ui/buttons/icon-masked-circular_2x.png)
+    - [Black icon button](ui/buttons/black_icon-masked-circular_2x.png)
+    - [Forest icon button](ui/buttons/forest_icon-masked-circular_2x.png)
 - Some more style info:
   - For the long button:
     ```
