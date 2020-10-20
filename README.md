@@ -157,3 +157,7 @@
 - Update the `client_id` and `sign_in_domain` of the sign in url in step 2
 - Update the `user_pool_id` and `region` of the verification in step 5
 - Update the `jwks.json` file in step 5
+
+# Contact Support
+
+If you faced any issues, [contact our support team](mailto:dev@1receipt.io) and a dedicated developer will assist.
