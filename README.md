@@ -1,4 +1,4 @@
-# 1Receipt OAuth
+# 1Receipt OpenID
 
 1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
 
@@ -6,7 +6,7 @@
 
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
 
-- Once the your account has been approved, we will send one sandbox certificate by email.
+- Once the checking has been past, one sandbox certification will be sent by email.
 
 - The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
 
@@ -39,7 +39,7 @@
     https://www.1receipt.io/login?client_id=my_client_id&response_type=code&scope=openid+profile&redirect_uri=my_redirect_uri
     ```
 
-- Integrate the user consent dialog: (TO BE UPDATED)
+- Integrate the user consent dialog:
   - integrate the componetes for authorization
     - [Example Code ConsentDialog.js](ui/src/pages/components/dialogs/ConsentDialog.js)
     - [Example Code ConsentDialog.tsx](ui/src/pages/components/dialogs/ConsentDialog.tsx)
@@ -57,7 +57,7 @@
 
 ##### 4. Authenticating the user
 
-- Open the URL generated in step 2 in browser
+- Open the URL generated in step 3 in browser
   ![Sign In Page](ui/example/SignIn.png)
 - After customer sign in with their account, this http request will redirect to the reditect_uri and contains `id_token` of this customer in query.
 
@@ -135,12 +135,11 @@
 - In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
-##### 7. Link to 1receipt main app
+##### 7. Link to 1receipt main app (so that the user can download the full application if they need)
 
 - Two ways to choose:
   - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app
   - Inclue both 1receipt App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
-- So that the user can download the full application if they want.
 
 ### Switch to Prod
 
