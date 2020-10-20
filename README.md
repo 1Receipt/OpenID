@@ -135,12 +135,11 @@
 - In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
-##### 7. Link to 1receipt main app
+##### 7. Link to 1receipt main app (so that the user can download the full application if they need)
 
 - Two ways to choose:
   - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app
   - Inclue both 1receipt App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
-- So that the user can download the full application if they want.
 
 ### Switch to Prod
 
