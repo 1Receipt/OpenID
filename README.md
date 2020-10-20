@@ -149,6 +149,7 @@
 - [Submit a ticket](https://forms.gle/j3hsG2nDk7KtXT8cA) with a full integration video and following after a Skype meeting to verify the integration.
 
 - Once the checking has been past, one production certification will be sent by email.
+- Attention: Design cannot be updated after switched to production otherwise the credential will be disabled until the new integration get verified again
 
 ##### 2. Update to production environment
 
