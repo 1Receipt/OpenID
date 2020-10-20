@@ -22,21 +22,7 @@
     - [Main icon button](ui/buttons/icon-masked-circular_2x.png)
     - [Black icon button](ui/buttons/black_icon-masked-circular_2x.png)
     - [Forest icon button](ui/buttons/forest_icon-masked-circular_2x.png)
-- CSS style for the two buttons:
-  - For the long button:
-    ```
-    position: absolute;
-    width: 305px;
-    height: 58px;
-    filter: drop-shadow(0px 16px 60px rgba(134, 109, 201, 0.16));
-    ```
-  - For the icon button:
-    ```
-    position: absolute;
-    width: 59px;
-    height: 58px;
-    filter: drop-shadow(0px 16px 60px rgba(134, 109, 201, 0.16));
-    ```
+- [1receipt Design Resources](https://www.figma.com/file/BYISy6LhB5PZKllp3Ddvup/1receipt-openID?node-id=0%3A1). Please follow these guidelines
 
 ## 3. Generate auth URL and integrate user consent dialog
 
