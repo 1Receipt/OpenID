@@ -39,7 +39,7 @@
     https://www.1receipt.io/login?client_id=my_client_id&response_type=code&scope=openid+profile&redirect_uri=my_redirect_uri
     ```
 
-- Integrate the user consent dialog: (TO BE UPDATED)
+- Integrate the user consent dialog:
   - integrate the componetes for authorization
     - [Example Code ConsentDialog.js](ui/src/pages/components/dialogs/ConsentDialog.js)
     - [Example Code ConsentDialog.tsx](ui/src/pages/components/dialogs/ConsentDialog.tsx)
@@ -57,7 +57,7 @@
 
 ##### 4. Authenticating the user
 
-- Open the URL generated in step 2 in browser
+- Open the URL generated in step 3 in browser
   ![Sign In Page](ui/example/SignIn.png)
 - After customer sign in with their account, this http request will redirect to the reditect_uri and contains `id_token` of this customer in query.
 
