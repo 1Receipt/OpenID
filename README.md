@@ -22,10 +22,9 @@
     - [Main icon button](ui/buttons/icon-masked-circular_2x.png)
     - [Black icon button](ui/buttons/black_icon-masked-circular_2x.png)
     - [Forest icon button](ui/buttons/forest_icon-masked-circular_2x.png)
-- Some more style info:
+- CSS style for the two buttons:
   - For the long button:
     ```
-    CSS
     position: absolute;
     width: 305px;
     height: 58px;
@@ -33,7 +32,6 @@
     ```
   - For the icon button:
     ```
-    CSS
     position: absolute;
     width: 59px;
     height: 58px;
