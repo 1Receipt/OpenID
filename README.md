@@ -22,6 +22,23 @@
     - [Main Icon button](ui/buttons/icon-masked-circular_2x.png)
     - [Black Icon button](ui/buttons/black_icon-masked-circular_2x.png)
     - [Forest Icon button](ui/buttons/forest_icon-masked-circular_2x.png)
+- Some more style info:
+  - For the long button:
+    ```
+    CSS
+    position: absolute;
+    width: 305px;
+    height: 58px;
+    filter: drop-shadow(0px 16px 60px rgba(134, 109, 201, 0.16));
+    ```
+  - For the icon button:
+    ```
+    CSS
+    position: absolute;
+    width: 59px;
+    height: 58px;
+    filter: drop-shadow(0px 16px 60px rgba(134, 109, 201, 0.16));
+    ```
 
 ##### 3. Generate auth URL and integrate user consent dialog
 
