@@ -1,13 +1,15 @@
 # 1Receipt OAuth
-This documentation is for integrate 1receipt account to third party clients
+1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
 
-### Start
 ##### 1. Apply for 1receipt sandbox certification
--  Fill in [apply form](https://forms.gle/Yg5k1DgTWGchDPVv5) and wait for checking application details. 
+-  Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours. 
   
--  Once the checking has been past, one sandbox certification will be sent by email.
+-  Once the your account has been approved, we will send one sandbox certificate by email.
   
--  The sandbox certification contains `client_id` and `sign_in_domain` `user_pool_id` `region`for sandbox userpool.
+-  The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
+
+##### 2. Add the 1receipt auth UI into your app
+- Image of the button..
 
 ##### 2. Generate auth URL and integrate user consent dialog
 - Generate auth URL
@@ -20,18 +22,11 @@ This documentation is for integrate 1receipt account to third party clients
   https://www.1receipt.io/login?client_id=my_client_id&response_type=code&scope=openid+profile&redirect_uri=my_redirect_uri
   ```
 
-- Integrate the user consent dialog:
-  - Content:
-    ```
-    Do you authorise 1receipt to share your accountId and firstName with 1R OAuth 2.0 Playground?
-    ```
-  - Button:
-    `Allow` | `Cancel`
-  - Example:
-    [Component Example]()
-    ![Component Example Page]()
-
-- Attention: Only allow redirect_uri submitted in apply form.
+- Integrate the user consent dialog: (TO BE UPDATED)
+  - integrate the componetes from OpenID
+  - the design guidelines
+  - update to the client name
+  - buttons behaviour (cancel doesn't give permission and allow will authenticate the user and redirect to the app)
 
 ##### 3. Authenticating the user
 - Open the URL generated in step 2 in browser
@@ -65,7 +60,6 @@ This documentation is for integrate 1receipt account to third party clients
         - Fields in jwk:
           - Key ID (kid)
             The kid is a hint that indicates which key was used to secure the JSON web signature (JWS) of the token.
-
           - Algorithm (alg)
             The alg header parameter represents the cryptographic algorithm used to secure the ID token. User pools use an RS256 cryptographic algorithm, which is an RSA signature with SHA-256. For more information on RSA, see RSA Cryptography.
 
@@ -96,28 +90,27 @@ This documentation is for integrate 1receipt account to third party clients
     2. The audience (aud) claim should match your app `client_id` 
     3. The issuer (iss) claim should match your `user_pool_id` in the following format:
         ```
-        https://cognito-idp.us-east-1.amazonaws.com/<user_pool_id>.
+        https://cognito-idp.ap-southeast-2.amazonaws.com/<user_pool_id>.
         ```
     4. Check the token_use claim, its value must be `id`.
   - You can now trust the claims inside the token.
   
 ##### 5. Obtaining user profile information
 - In the payload of this `id_token` contains `accountId` and `name` for this customer which should be saved in your database.
+- In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
+Image of the example app..
 
-##### 6. Link to the 1receipt main app
-- Make a new page in application showing the barcode of customer's account id and name.
-  ![1receipt card page]()
+##### 6. Link to 1receipt main app
+- Include both 1receipt App Store Id (1340659825) (https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Id (mono.x1receipt.user) (https://play.google.com/store/apps/details?id=mono.x1receipt.user) which connect to the main app so the user can download the full application if they want.
 
-- Include both 1receipt App Store Id () and Play Store Id () which connect to the main app so the user can download the full application if they want.
-  ![1receipt main app link page]()
 
-##### 7. Request for production access
+### Switch to Prod
+
+##### 1. Request for production access
 -  [Submit a ticket](https://forms.gle/j3hsG2nDk7KtXT8cA) with a screenshot and following after a Skype meeting to verify the integration.
   
 - Once the checking has been past, one production certification will be sent by email.
   
-- The production certification contains `client_id` and `sign_in_domain` `user_pool_id` `region`for production userpool
-
-##### 8. Switch to production environment
+##### 2. Update to production environment
 - Update the `client_id` and `sign_in_domain` of the sign in url in step 2
 - Update the `user_pool_id` `region` of the jwks url in step 3
