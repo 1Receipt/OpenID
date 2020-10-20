@@ -10,23 +10,18 @@
 
 - The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
 
-##### 2. Add the 1receipt auth UI into your app
+##### 2. Using the System-Provided Buttons
 
 - There are three colors and two types of buttons for you to choose
+  ![Buttons preview](ui/example/ButtonsPreview.png)
   - Continue with 1receipt button:
-    - Light Green
-      ![Light Green button](ui/buttons/1receipt-id-continue-with_2x.png)
-    - Black
-      ![Black button](ui/buttons/black_1receipt-id-continue-with_2x.png)
-    - Dark Green
-      ![Dark Green button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
+    - [Main button](ui/buttons/1receipt-id-continue-with_2x.png)
+    - [Black button](ui/buttons/black_1receipt-id-continue-with_2x.png)
+    - [Forest button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
   - Icon button:
-    - Light Green
-      ![Light Green button](ui/buttons/icon-masked-circular_2x.png)
-    - Black
-      ![Black button](ui/buttons/black_icon-masked-circular_2x.png)
-    - Dark Green
-      ![Dark Green button](ui/buttons/forest_icon-masked-circular_2x.png)
+    - [Main Icon button](ui/buttons/icon-masked-circular_2x.png)
+    - [Black Icon button](ui/buttons/black_icon-masked-circular_2x.png)
+    - [Forest Icon button](ui/buttons/forest_icon-masked-circular_2x.png)
 
 ##### 3. Generate auth URL and integrate user consent dialog
 
