@@ -2,7 +2,7 @@
 
 1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
 
-##### 1. Apply for 1receipt sandbox certification
+## 1. Apply for 1receipt sandbox certification
 
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
 
@@ -10,7 +10,7 @@
 
 - The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
 
-##### 2. Using the System-Provided Buttons
+## 2. Using the System-Provided Buttons
 
 - There are three colors and two types of buttons for you to choose
   ![Buttons preview](ui/example/ButtonsPreview.png)
@@ -38,7 +38,7 @@
     filter: drop-shadow(0px 16px 60px rgba(134, 109, 201, 0.16));
     ```
 
-##### 3. Generate auth URL and integrate user consent dialog
+## 3. Generate auth URL and integrate user consent dialog
 
 - Generate auth URL
 
@@ -68,11 +68,11 @@
   - Buttons behaviour:
     - Cancel doesn't give permission and will stop the OpenID flow here meaning that will not go to step 4
     - Allow will continue the OpenID flow to step 4 to authenticate the user and redirect to the app
-  - If the integration doesn't following the rules above, your request of production certificate will be rejected.
+  - If the integration doesn't follow the above rules, your request for production certificate will be rejected.
 
-##### 4. Authenticating the user
+## 4. Authenticating the user
 
-- Open the URL generated in step 3 in browser
+- Open the URL generated in step 3 open in your browser
   ![Sign In Page](ui/example/SignIn.png)
 - After customer sign in with their account, this http request will redirect to the reditect_uri and contains `id_token` of this customer in query.
 
@@ -81,7 +81,7 @@
   <redirect_uri>#id_token=<id_token>&expires_in=<expires_in>&token_type=Bearer
   ```
 
-##### 5. Validating an ID token
+## 5. Validating an ID token
 
 - Confirm the Structure of the JWT
   - A JSON Web Token (JWT) includes three sections:
@@ -144,28 +144,29 @@
     4. Check the token_use claim, its value must be `id`.
   - You can now trust the claims inside the token.
 
-##### 6. Obtaining user profile information
+## 6. Obtaining user profile information
 
 - In the payload of this `id_token` contains `accountId` and `name` for this customer which should be saved in your database.
 - In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
-##### 7. Link to 1receipt main app (so that the user can download the full application if they need)
+## 7. Link to 1receipt main app (so that the user can download the full application if they need)
 
 - Two ways to choose:
   - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app
   - Inclue both 1receipt App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
 
-### Switch to Prod
+# Switch to Prod
 
-##### 1. Request for production access
+## 1. Request for production access
 
 - [Submit a ticket](https://forms.gle/j3hsG2nDk7KtXT8cA) with a full integration video and following after a Skype meeting to verify the integration.
 
 - Once the checking has been past, one production certification will be sent by email.
-- Attention: Design cannot be updated after switched to production otherwise the credential will be disabled until the new integration get verified again
 
-##### 2. Update to production environment
+- Design cannot be updated after switched to production otherwise the credential will be disabled until the new integration get verified again
+
+## 2. Update to production environment
 
 - Update the `client_id` and `sign_in_domain` of the sign in url in step 2
 - Update the `user_pool_id` and `region` of the verification in step 5
