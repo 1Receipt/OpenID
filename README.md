@@ -1,4 +1,4 @@
-# 1Receipt OAuth
+# 1Receipt OpenID
 
 1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
 
