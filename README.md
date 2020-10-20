@@ -1,5 +1,5 @@
-# 1Receipt OpenID
-1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, for shopper to have a smoother process in createing a 1receipt account and be able to scan their 1receipt barcode at the checkout.
+# 1receipt® OpenID™
+1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, this process will allow shoppers to quickly create a 1receipt account without downloading any application and scan their 1receipt barcode at the checkout point.
 
 ## 1. Apply for 1receipt sandbox certification
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
