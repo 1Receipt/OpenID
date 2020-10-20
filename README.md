@@ -9,7 +9,7 @@
 ## 2. Using the System-Provided Buttons
 - There are three colors and two types of buttons for you to choose
   ![Buttons preview](ui/example/ButtonsPreview.png)
-  - Continue with 1receipt button:
+  - Long button:
     - [Main long button](ui/buttons/1receipt-id-continue-with_2x.png)
     - [Black long button](ui/buttons/black_1receipt-id-continue-with_2x.png)
     - [Forest long button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
