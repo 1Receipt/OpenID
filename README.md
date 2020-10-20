@@ -128,3 +128,6 @@
 
 # Contact Support
 If you need help, our [support team](mailto:dev@1receipt.io) is always on.
+
+# License
+This project is licensed under the terms of the Apache 2.0 license. See the [LICENSE](LICENSE) file for more information.
