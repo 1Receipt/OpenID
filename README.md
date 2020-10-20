@@ -12,7 +12,21 @@
 
 ##### 2. Add the 1receipt auth UI into your app
 
-- Image of the button..
+- There are three colors and two types of buttons for you to choose
+  - Continue with 1receipt button:
+    - Light Green
+      ![Light Green button](ui/buttons/1receipt-id-continue-with_2x.png)
+    - Black
+      ![Black button](ui/buttons/black_1receipt-id-continue-with_2x.png)
+    - Dark Green
+      ![Dark Green button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
+  - Icon button:
+    - Light Green
+      ![Light Green button](ui/buttons/icon-masked-circular_2x.png)
+    - Black
+      ![Black button](ui/buttons/black_icon-masked-circular_2x.png)
+    - Dark Green
+      ![Dark Green button](ui/buttons/forest_icon-masked-circular_2x.png)
 
 ##### 3. Generate auth URL and integrate user consent dialog
 
@@ -124,7 +138,7 @@
 
 - In the payload of this `id_token` contains `accountId` and `name` for this customer which should be saved in your database.
 - In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
-  ![Image of the 1receipt card]()
+  ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
 ##### 7. Link to 1receipt main app
 
