@@ -1,6 +1,19 @@
 # 1receipt® OpenID™
 1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, this process will allow shoppers to quickly create a 1receipt account without downloading any application and scan their 1receipt barcode at the checkout point.
 
+## Index
+* [Apply for 1receipt sandbox certification](#1-apply-for-1receipt-sandbox-certification)
+* [Using the System-Provided Buttons](#2-using-the-system-provided-buttons)
+* [Generate auth URL and integrate user consent dialog](#3-generate-auth-url-and-integrate-user-consent-dialog)
+* [Authenticating the user](#4-authenticating-the-user)
+* [Validating an ID token](#5-validating-an-id-token)
+* [Obtaining user profile information](#6-obtaining-user-profile-information)
+* [Link to 1receipt main app](#7-link-to-1receipt-main-app)
+* [Request for production access](#1-request-for-production-access)
+* [Update to production environment](#2-update-to-production-environment)
+* [Contact Support](#contact-support)
+* [License](#license)
+
 ## 1. Apply for 1receipt sandbox certification
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
 - Once the checking has been past, one sandbox certification will be sent by email.
@@ -109,7 +122,9 @@
 - In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
-## 7. Link to 1receipt main app (so that the user can download the full application if they need)
+## 7. Link to 1receipt main app 
+This will allow the user to download the full application right from your application.
+
 - Two ways to choose:
   - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app
   - Inclue both 1receipt App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
