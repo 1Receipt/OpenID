@@ -119,7 +119,7 @@
 
 ## 6. Obtaining user profile information
 - In the payload of this `id_token` contains `accountId` and `name` for this customer which should be saved in your database.
-- In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-39 barcode.
+- In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-128 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
 ## 7. Link to 1receipt main app 
