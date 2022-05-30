@@ -1,5 +1,5 @@
 # 1receipt® OpenID™
-1receipt® OpenID™ allows for third party shopping app to integrate with 1receipt, this process will allow shoppers to quickly create a 1receipt account without downloading any application and scan their 1receipt barcode at the checkout point.
+1receipt® OpenID™ allows for third party shopping application to integrate with 1receipt, this process will allow their shoppers to quickly create a 1receipt account without downloading the full application to receive their receipt quicker.
 
 ## Index
 * [Apply for 1receipt sandbox certification](#1-apply-for-1receipt-sandbox-certification)
@@ -16,7 +16,7 @@
 
 ## 1. Apply for 1receipt sandbox certification
 - Fill in this [form](https://forms.gle/Yg5k1DgTWGchDPVv5) and we will get back to you in 24 hours.
-- Once the checking has been past, one sandbox certification will be sent by email.
+- Once we have completed checking your application form, one sandbox certificate will be sent by email.
 - The certificate contains `client_id` and `sign_in_domain` `user_pool_id` `region` `redirect_uri` for sandbox userpool.
 
 ## 2. Using the System-Provided Buttons
@@ -26,7 +26,7 @@
     - [Main long button](ui/buttons/1receipt-id-continue-with_2x.png)
     - [Black long button](ui/buttons/black_1receipt-id-continue-with_2x.png)
     - [Forest long button](ui/buttons/forest_1receipt-id-continue-with_2x.png)
-  - Icon button:
+  - Icon:
     - [Main icon button](ui/buttons/icon-masked-circular_2x.png)
     - [Black icon button](ui/buttons/black_icon-masked-circular_2x.png)
     - [Forest icon button](ui/buttons/forest_icon-masked-circular_2x.png)
@@ -59,7 +59,7 @@
 
 ## 4. Authenticating the user
 - Open the URL generated in step 3 open in your browser
-  ![Sign In Page](ui/example/SignIn.png)
+  ![Sign In Page](ui/example/webAuth.jpg)
 - After customer sign in with their account, this http request will redirect to the reditect_uri and contains `id_token` of this customer in query.
 - Redirect request example:
   ```
@@ -118,23 +118,22 @@
   - You can now trust the claims inside the token.
 
 ## 6. Obtaining user profile information
-- In the payload of this `id_token` contains `accountId` and `name` for this customer which should be saved in your database.
-- In the UI of your application you need to show the shopper name, shopper accountId, shopper barcode which is accountId translated into CODE-128 barcode.
+- In the user payload you can read user's `id_token`, `accountId` and `name` and you need to save them securely in your database.
+- In your application you need to show the shopper name, shopper accountId, shopper barcode which is the accountId translated into CODE-128 barcode.
   ![Image of the 1receipt card](ui/example/1receiptCard.png)
 
 ## 7. Link to 1receipt main app 
 This will allow the user to download the full application right from your application.
 
 - Two ways to choose:
-  - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app
-  - Inclue both 1receipt App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
+  - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app and also the App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
 
 # Switch to Prod
 
 ## 1. Request for production access
-- [Submit a ticket](https://forms.gle/j3hsG2nDk7KtXT8cA) with a full integration video and following after a Skype meeting to verify the integration.
-- Once the checking has been past, one production certification will be sent by email.
-- Design cannot be updated after switched to production otherwise the credential will be disabled until the new integration get verified again
+- [Submit a ticket](https://forms.gle/j3hsG2nDk7KtXT8cA) with a full integration video and following a meeting to fully verify the integration.
+- Once we have completed checking your application, one production certifcate will be sent by email.
+- NOTE: Design cannot be modified after production certificate has been granted otherwise the credential can be revoked and a new verification need to take place. Also if there is any misuse of 1receipt® OpenID™, Quad Core Pty. Ltd. (owner of 1receipt brand) has the right to terminate any issued certifiate and stop the integration.
 
 ## 2. Update to production environment
 - Update the `client_id` and `sign_in_domain` of the sign in url in step 2
