@@ -60,7 +60,7 @@
 ## 4. Authenticating the user
 - Open the URL generated in step 3 open in your browser
   ![Sign In Page](ui/example/webAuth.jpg)
-- After customer sign in with their account, this http request will redirect to the reditect_uri and contains `id_token` of this customer in query.
+- After customer sign up / sign in, the http request will redirect to the `redirect_uri` and will contain `id_token` of the customer in query.
 - Redirect request example:
   ```
   <redirect_uri>#id_token=<id_token>&expires_in=<expires_in>&token_type=Bearer
@@ -126,7 +126,7 @@
 This will allow the user to download the full application right from your application.
 
 - Two ways to choose:
-  - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app and also the App Store Link(https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
+  - Include both 1receipt App Store Id (1340659825) and Play Store Id (mono.x1receipt.user) which connect to the main app and also the App Store Link (https://apps.apple.com/au/app/1receipt/id1340659825) and Play Store Link (https://play.google.com/store/apps/details?id=mono.x1receipt.user)
 
 # Switch to Prod
 
